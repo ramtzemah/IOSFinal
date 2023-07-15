@@ -51,7 +51,7 @@
                                                 <color key="textColor" white="0.69999999999999996" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Crypto Trading" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="geT-r6-R4b" userLabel="cryptoTrading">
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Crypto" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="geT-r6-R4b" userLabel="cryptoTrading">
                                                 <rect key="frame" x="20" y="168" width="353" height="25.333333333333343"/>
                                                 <fontDescription key="fontDescription" name="OpenSans-Bold" family="Open Sans" pointSize="20"/>
                                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -73,6 +73,23 @@
                                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Mask Group" translatesAutoresizingMaskIntoConstraints="NO" id="kXE-2E-89j">
                                                 <rect key="frame" x="0.0" y="-219" width="393" height="346"/>
                                             </imageView>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="chevron.left" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="2n1-6U-9iV">
+                                                <rect key="frame" x="5" y="7" width="30" height="27"/>
+                                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="30.666666666666671" id="Nnh-uB-128"/>
+                                                    <constraint firstAttribute="width" constant="30" id="nry-uc-m80"/>
+                                                </constraints>
+                                            </imageView>
+                                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7Tg-Nq-HfK">
+                                                <rect key="frame" x="5" y="7" width="30" height="30"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="plain"/>
+                                                <connections>
+                                                    <action selector="backClicked:" destination="Bal-Ah-Id2" eventType="touchUpInside" id="pKr-Px-Zq6"/>
+                                                </connections>
+                                            </button>
                                         </subviews>
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <constraints>
@@ -94,6 +111,8 @@
                                             <constraint firstItem="UjR-Ic-m22" firstAttribute="leading" secondItem="8yC-5Y-RHe" secondAttribute="leading" constant="30" id="eqM-aA-eyG"/>
                                             <constraint firstItem="izV-fb-1h0" firstAttribute="leading" secondItem="8yC-5Y-RHe" secondAttribute="leading" constant="22" id="hIf-Vb-Fl7"/>
                                             <constraint firstAttribute="trailing" secondItem="geT-r6-R4b" secondAttribute="trailing" constant="20" symbolic="YES" id="hQt-XT-qEZ"/>
+                                            <constraint firstItem="2n1-6U-9iV" firstAttribute="leading" secondItem="8yC-5Y-RHe" secondAttribute="leading" constant="5" id="hav-wU-DJ1"/>
+                                            <constraint firstItem="2n1-6U-9iV" firstAttribute="top" secondItem="8yC-5Y-RHe" secondAttribute="top" constant="5" id="jSE-yt-yfq"/>
                                             <constraint firstItem="VjH-00-MYL" firstAttribute="centerX" secondItem="8yC-5Y-RHe" secondAttribute="centerX" id="neI-cO-bAQ"/>
                                             <constraint firstItem="kXE-2E-89j" firstAttribute="centerX" secondItem="Ndc-NQ-efs" secondAttribute="centerX" id="noZ-Nt-X4Z"/>
                                             <constraint firstAttribute="bottom" secondItem="VR7-cd-bmF" secondAttribute="bottom" id="rY6-qL-tHq"/>
@@ -276,13 +295,14 @@
     </scenes>
     <resources>
         <image name="Mask Group" width="375" height="346"/>
+        <image name="chevron.left" catalog="system" width="97" height="128"/>
         <image name="face-id" width="80" height="80"/>
         <image name="logo" width="88.333335876464844" height="88"/>
         <namedColor name="darkerBlue">
-            <color red="0.015686274509803921" green="0.10196078431372549" blue="0.30980392156862746" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color red="0.016000000759959221" green="0.10199999809265137" blue="0.31000000238418579" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
         <namedColor name="lightBlue">
-            <color red="0.43529411764705883" green="0.71764705882352942" blue="0.89803921568627454" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color red="0.43500000238418579" green="0.71799999475479126" blue="0.89800000190734863" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
     </resources>
 </document>

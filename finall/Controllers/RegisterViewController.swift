@@ -14,6 +14,14 @@ class RegisterViewController: UIViewController {
     
     @IBOutlet weak var errorContainer: UIView!
     @IBOutlet weak var btnLogin: UIButton!
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        
+        // Hide the navigation bar for this view controller
+        navigationController?.setNavigationBarHidden(true, animated: animated)
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         handleView()
@@ -47,6 +55,20 @@ class RegisterViewController: UIViewController {
         TFusername.layer.addSublayer(underlineLayer)
         TFpassword.borderStyle = .none
         TFpassword.layer.addSublayer(underlineLayer1)
+    }
+    
+    @IBAction func backClicked(_ sender: Any) {
+        if let navigationController = self.navigationController {
+                            // The view controller is embedded in a navigation controller
+                            // You can safely use pushViewController(_:animated:) here
+                            let storyboard = UIStoryboard(name: "View", bundle: nil)
+                            let ctrl = storyboard.instantiateViewController(identifier: "LoginViewController")
+                            navigationController.pushViewController(ctrl, animated: true)
+                        } else {
+                            // The view controller is not embedded in a navigation controller
+                            // pushViewController(_:animated:) will not work here
+                            print("The view controller is not embedded in a navigation controller.")
+                        }
     }
     
     func validateLogin(user: String, pass: String) -> Bool {

@@ -14,10 +14,20 @@ class LoginViewController: UIViewController {
     @IBOutlet weak var TFusername: UITextField!
     @IBOutlet weak var TFpassword: UITextField!
     @IBOutlet weak var btnLogin: UIButton!
+    var Managersx = AssetManager()
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        
+        // Hide the navigation bar for this view controller
+        navigationController?.setNavigationBarHidden(true, animated: animated)
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        
         /////
+        Managersx.delegate = self
+        Managersx.fetchMarkets()
+        ///
         if let navigationController = self.navigationController {
                             // The view controller is embedded in a navigation controller
                             // You can safely use pushViewController(_:animated:) here
@@ -32,6 +42,8 @@ class LoginViewController: UIViewController {
         ///
         handleView()
     }
+    
+
 
     @objc func dismissKeyboard() {
         TFusername.resignFirstResponder()
@@ -107,7 +119,17 @@ class LoginViewController: UIViewController {
         FirebaseCenter.login(email: TFusername.text!, password: TFpassword.text!) { success, data, errorMsg in
             if success {
                 print(success)
-
+                if let navigationController = self.navigationController {
+                                    // The view controller is embedded in a navigation controller
+                                    // You can safely use pushViewController(_:animated:) here
+                                    let storyboard = UIStoryboard(name: "Markets", bundle: nil)
+                                    let ctrl = storyboard.instantiateViewController(identifier: "MarketsViewController")
+                                    navigationController.pushViewController(ctrl, animated: true)
+                                } else {
+                                    // The view controller is not embedded in a navigation controller
+                                    // pushViewController(_:animated:) will not work here
+                                    print("The view controller is not embedded in a navigation controller.")
+                                }
             } else {
                 self.errorLbl.text = "Username or password are incorrect"
                 self.errorContainer.isHidden = false
@@ -141,5 +163,36 @@ extension LoginViewController: UITextFieldDelegate{
                }
            }
         self.validateLogin(user: TFusername.text ?? "", pass: TFpassword.text ?? "")
+    }
+}
+
+extension LoginViewController: aWeatherManagerDelegate {
+    func didUpdate(Manager: AssetManager, weather: [Asset]){
+        print("aaa")
+        var savedObjects = UserDefaults.standard.array(forKey: "SavedObjects") as? [Data] ?? []
+        if savedObjects != nil{
+            UserDefaults.standard.removeObject(forKey: "SavedObjects")
+            savedObjects = []
+        }
+        for newObject in weather {
+            
+            let encoder = JSONEncoder()
+            if let encodedObject = try? encoder.encode(newObject) {
+                savedObjects.append(encodedObject)
+            }
+        }
+        // Save the updated array back to UserDefaults
+        UserDefaults.standard.set(savedObjects, forKey: "SavedObjects")
+        DispatchQueue.main.async {
+            print("aaa")
+            //self.tableView.reloadData()
+//            self.temperatureLabel.text = weather.tempString
+//            self.conditionImageView.image = UIImage(systemName: weather.conditionName)
+//            self.cityLabel.text = weather.cityName
+        }
+    }
+    
+    func didFailWithError(error: String){
+        print(error)
     }
 }

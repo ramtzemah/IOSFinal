@@ -15,9 +15,9 @@ struct Payload: Codable {
     var high: Float64?
     var volume: Float64?
     var lastPrice: Float64?
-//    var graphData: [GraphData]?
-//    var currentHour: GraphData?
-//    var removedPointsTimestamps: [GraphData]?
+    var graphData: [GraphData]?
+    var currentHour: GraphData?
+    var removedPointsTimestamps: [GraphData]?
     
     static func parse(json: String) -> Payload? {
         let decoder = JSONDecoder()

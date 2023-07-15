@@ -1,0 +1,467 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bucket
+   uuid = "CE10E72D-2792-46BA-B1F8-440601A6C233"
+   type = "1"
+   version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "28EE9CE9-12D0-4C4E-9B73-AFAD3BD93DB9"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "finall/ViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "25"
+            endingLineNumber = "25"
+            landmarkName = "viewDidLoad()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "6E3FCB0D-EA77-4A97-A74E-5A8C2F6D3899"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "finall/ViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "14"
+            endingLineNumber = "14"
+            landmarkName = "viewDidLoad()"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "6E3FCB0D-EA77-4A97-A74E-5A8C2F6D3899 - b7debdcaa5cffe03"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "finall.ViewController.viewDidLoad() -&gt; ()"
+                  moduleName = "finall"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/ramtzemah/inx/udemy-course/finall/finall/ViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "14"
+                  endingLineNumber = "14"
+                  offsetFromSymbolStart = "108">
+               </Location>
+               <Location
+                  uuid = "6E3FCB0D-EA77-4A97-A74E-5A8C2F6D3899 - b7debdcaa5cffe03"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "finall.ViewController.viewDidLoad() -&gt; ()"
+                  moduleName = "finall"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/ramtzemah/inx/udemy-course/finall/finall/ViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "14"
+                  endingLineNumber = "14"
+                  offsetFromSymbolStart = "116">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "A35A04C5-8E5C-4EDE-91D6-DA5679280B4F"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "finall/LoginViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "18"
+            endingLineNumber = "18"
+            landmarkName = "viewDidLoad()"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "A35A04C5-8E5C-4EDE-91D6-DA5679280B4F - 305adf47bb2d80c1"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "finall.LoginViewController.viewDidLoad() -&gt; ()"
+                  moduleName = "finall"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/ramtzemah/inx/udemy-course/finall/finall/LoginViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "16"
+                  endingLineNumber = "16"
+                  offsetFromSymbolStart = "76">
+               </Location>
+               <Location
+                  uuid = "A35A04C5-8E5C-4EDE-91D6-DA5679280B4F - 305adf47bb2d8087"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "finall.LoginViewController.viewDidLoad() -&gt; ()"
+                  moduleName = "finall"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/ramtzemah/inx/udemy-course/finall/finall/LoginViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "14"
+                  endingLineNumber = "14"
+                  offsetFromSymbolStart = "28">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "A2AEB9CE-A566-4516-BEC5-D26579ACB7FD"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "finall/LoginViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "109"
+            endingLineNumber = "109"
+            landmarkName = "loginClicked(_:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "A2AEB9CE-A566-4516-BEC5-D26579ACB7FD - 85de1256a875d65c"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "finall.LoginViewController.textFieldDidBeginEditing(__C.UITextField) -&gt; ()"
+                  moduleName = "finall"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/ramtzemah/inx/udemy-course/finall/finall/LoginViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "94"
+                  endingLineNumber = "94"
+                  offsetFromSymbolStart = "44">
+               </Location>
+               <Location
+                  uuid = "A2AEB9CE-A566-4516-BEC5-D26579ACB7FD - 624139813f838f31"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Swift.Bool, Swift.Optional&lt;Any&gt;, Swift.Bool) -&gt; () in finall.LoginViewController.loginClicked(Any) -&gt; ()"
+                  moduleName = "finall"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/ramtzemah/inx/udemy-course/finall/finall/LoginViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "93"
+                  endingLineNumber = "93"
+                  offsetFromSymbolStart = "100">
+               </Location>
+               <Location
+                  uuid = "A2AEB9CE-A566-4516-BEC5-D26579ACB7FD - 624139813f838ef3"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Swift.Bool, Swift.Optional&lt;Any&gt;, Swift.Bool) -&gt; () in finall.LoginViewController.loginClicked(Any) -&gt; ()"
+                  moduleName = "finall"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/ramtzemah/inx/udemy-course/finall/finall/LoginViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "95"
+                  endingLineNumber = "95"
+                  offsetFromSymbolStart = "152">
+               </Location>
+               <Location
+                  uuid = "A2AEB9CE-A566-4516-BEC5-D26579ACB7FD - 624139813f838d01"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Swift.Bool, Swift.Optional&lt;Any&gt;, Swift.Bool) -&gt; () in finall.LoginViewController.loginClicked(Any) -&gt; ()"
+                  moduleName = "finall"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/ramtzemah/inx/udemy-course/finall/finall/LoginViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "109"
+                  endingLineNumber = "109"
+                  offsetFromSymbolStart = "152">
+               </Location>
+               <Location
+                  uuid = "A2AEB9CE-A566-4516-BEC5-D26579ACB7FD - a7b3210c53aca2c5"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Swift.Bool, Swift.Optional&lt;Any&gt;, Swift.Bool) -&gt; () in finall.LoginViewController.loginClicked(Any) -&gt; ()"
+                  moduleName = "finall"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/ramtzemah/Downloads/finall/finall/LoginViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "109"
+                  endingLineNumber = "109"
+                  offsetFromSymbolStart = "152">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "5CED1726-4F1E-4137-9496-2AF0B7868C7C"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "finall/LoginViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "114"
+            endingLineNumber = "114"
+            landmarkName = "loginClicked(_:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "5CED1726-4F1E-4137-9496-2AF0B7868C7C - 85de1256a875d79a"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "finall.LoginViewController.textFieldDidBeginEditing(__C.UITextField) -&gt; ()"
+                  moduleName = "finall"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/ramtzemah/inx/udemy-course/finall/finall/LoginViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "96"
+                  endingLineNumber = "96"
+                  offsetFromSymbolStart = "884">
+               </Location>
+               <Location
+                  uuid = "5CED1726-4F1E-4137-9496-2AF0B7868C7C - 624139813f838ed4"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Swift.Bool, Swift.Optional&lt;Any&gt;, Swift.Bool) -&gt; () in finall.LoginViewController.loginClicked(Any) -&gt; ()"
+                  moduleName = "finall"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/ramtzemah/inx/udemy-course/finall/finall/LoginViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "96"
+                  endingLineNumber = "96"
+                  offsetFromSymbolStart = "228">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "556AE40F-75B6-48CD-BCC9-41AA16DDAA88"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "finall/Controllers/RegisterViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "82"
+            endingLineNumber = "82"
+            landmarkName = "registerClicked(_:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "556AE40F-75B6-48CD-BCC9-41AA16DDAA88 - ad0e7963fccf6acf"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Swift.Bool, Swift.Optional&lt;Any&gt;, Swift.Bool) -&gt; () in finall.RegisterViewController.registerClicked(Any) -&gt; ()"
+                  moduleName = "finall"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/ramtzemah/inx/udemy-course/finall/finall/Controllers/RegisterViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "83"
+                  endingLineNumber = "83"
+                  offsetFromSymbolStart = "244">
+               </Location>
+               <Location
+                  uuid = "556AE40F-75B6-48CD-BCC9-41AA16DDAA88 - ad0e7963fccf6af0"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Swift.Bool, Swift.Optional&lt;Any&gt;, Swift.Bool) -&gt; () in finall.RegisterViewController.registerClicked(Any) -&gt; ()"
+                  moduleName = "finall"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/ramtzemah/inx/udemy-course/finall/finall/Controllers/RegisterViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "82"
+                  endingLineNumber = "82"
+                  offsetFromSymbolStart = "152">
+               </Location>
+               <Location
+                  uuid = "556AE40F-75B6-48CD-BCC9-41AA16DDAA88 - a78d46a8b1046c2c"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Swift.Bool, Swift.Optional&lt;Any&gt;, Swift.Bool) -&gt; () in finall.RegisterViewController.registerClicked(Any) -&gt; ()"
+                  moduleName = "finall"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/ramtzemah/Downloads/finall/finall/Controllers/RegisterViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "82"
+                  endingLineNumber = "82"
+                  offsetFromSymbolStart = "152">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "9239FDC1-3266-4701-BE22-D30AFE89D19A"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "finall/Controllers/RegisterViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "88"
+            endingLineNumber = "88"
+            landmarkName = "registerClicked(_:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "3CD29859-221C-4588-89CF-F8FF9AAA7BD1"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "finall/Controllers/RegisterViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "87"
+            endingLineNumber = "87"
+            landmarkName = "registerClicked(_:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "3CD29859-221C-4588-89CF-F8FF9AAA7BD1 - ad0e7963fccf694b"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Swift.Bool, Swift.Optional&lt;Any&gt;, Swift.Bool) -&gt; () in finall.RegisterViewController.registerClicked(Any) -&gt; ()"
+                  moduleName = "finall"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/ramtzemah/inx/udemy-course/finall/finall/Controllers/RegisterViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "87"
+                  endingLineNumber = "87"
+                  offsetFromSymbolStart = "656">
+               </Location>
+               <Location
+                  uuid = "3CD29859-221C-4588-89CF-F8FF9AAA7BD1 - ad0e7963fccf694b"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Swift.Bool, Swift.Optional&lt;Any&gt;, Swift.Bool) -&gt; () in finall.RegisterViewController.registerClicked(Any) -&gt; ()"
+                  moduleName = "finall"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/ramtzemah/inx/udemy-course/finall/finall/Controllers/RegisterViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "87"
+                  endingLineNumber = "87"
+                  offsetFromSymbolStart = "732">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "8B28D262-2AEA-4A8C-B284-A8DA040CF020"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "finall/LoginViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "112"
+            endingLineNumber = "112"
+            landmarkName = "loginClicked(_:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "8B28D262-2AEA-4A8C-B284-A8DA040CF020 - 624139813f838e96"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Swift.Bool, Swift.Optional&lt;Any&gt;, Swift.Bool) -&gt; () in finall.LoginViewController.loginClicked(Any) -&gt; ()"
+                  moduleName = "finall"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/ramtzemah/inx/udemy-course/finall/finall/LoginViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "98"
+                  endingLineNumber = "98"
+                  offsetFromSymbolStart = "272">
+               </Location>
+               <Location
+                  uuid = "8B28D262-2AEA-4A8C-B284-A8DA040CF020 - 624139813f838ca4"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Swift.Bool, Swift.Optional&lt;Any&gt;, Swift.Bool) -&gt; () in finall.LoginViewController.loginClicked(Any) -&gt; ()"
+                  moduleName = "finall"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/ramtzemah/inx/udemy-course/finall/finall/LoginViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "112"
+                  endingLineNumber = "112"
+                  offsetFromSymbolStart = "272">
+               </Location>
+               <Location
+                  uuid = "8B28D262-2AEA-4A8C-B284-A8DA040CF020 - a7b3210c53aca278"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Swift.Bool, Swift.Optional&lt;Any&gt;, Swift.Bool) -&gt; () in finall.LoginViewController.loginClicked(Any) -&gt; ()"
+                  moduleName = "finall"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/ramtzemah/Downloads/finall/finall/LoginViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "112"
+                  endingLineNumber = "112"
+                  offsetFromSymbolStart = "272">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "256F6F95-A37D-4171-B623-B5F6230CF030"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "finall/Controllers/MarketsViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "37"
+            endingLineNumber = "37"
+            landmarkName = "sortOrderTouched()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
+</Bucket>

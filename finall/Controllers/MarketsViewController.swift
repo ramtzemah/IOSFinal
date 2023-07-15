@@ -12,7 +12,7 @@ class MarketsViewController: UIViewController {
     @IBOutlet weak var searchView: UIView!
     @IBOutlet weak var tfSearch: UITextField!
     @IBOutlet weak var tableView: UITableView!
-    @IBOutlet weak var btnSort: UIButton!
+//    @IBOutlet weak var btnSort: UIButton!
     @IBOutlet weak var btnSortOrder: UIButton!
     @IBOutlet weak var notFound: UIView!
     var vData: [Market] = []
@@ -42,10 +42,10 @@ class MarketsViewController: UIViewController {
 
     
     func handleView() {
-        tfSearch.text == "Search"
-        btnSort.layer.borderWidth = 1.0 // Set the desired border width
-        btnSort.layer.borderColor = UIColor(named: "lightBlue")?.cgColor // Set the desired border color
-        btnSort.layer.cornerRadius = 8.0
+        tfSearch.delegate = self
+        tfSearch.text = "Search"//        btnSort.layer.borderWidth = 1.0 // Set the desired border width
+//        btnSort.layer.borderColor = UIColor(named: "lightBlue")?.cgColor // Set the desired border color
+//        btnSort.layer.cornerRadius = 8.0
         btnSortOrder.layer.borderWidth = 1.0 // Set the desired border width
         btnSortOrder.layer.borderColor = UIColor(named: "lightBlue")?.cgColor // Set the desired border color
         btnSortOrder.layer.cornerRadius = 8.0
@@ -69,12 +69,7 @@ class MarketsViewController: UIViewController {
                         }
     }
     
-    @IBAction func sortTouched() {
-        let smallConfig = UIImage.SymbolConfiguration(pointSize: 12, weight: .regular, scale: .medium)
-        let smallArrowUp = UIImage(systemName: "chevron.up", withConfiguration: smallConfig)
-       // self.dropdown.show()
-        self.btnSort.setImage(smallArrowUp, for: .normal)
-    }
+
 
     @IBAction func sortOrderTouched() {
         self.btnSortOrder.isSelected = !self.btnSortOrder.isSelected

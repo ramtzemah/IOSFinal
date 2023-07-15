@@ -43,7 +43,7 @@
                                 </items>
                             </navigationBar>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="PgS-w9-Oso">
-                                <rect key="frame" x="20" y="127" width="243" height="36"/>
+                                <rect key="frame" x="20" y="127" width="330" height="36"/>
                                 <subviews>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Qul-dA-xwa">
                                         <rect key="frame" x="8" y="10.999999999999998" width="20" height="14.666666666666666"/>
@@ -55,7 +55,7 @@
                                         <imageReference key="image" image="magnifyingglass" catalog="system" symbolScale="small"/>
                                     </imageView>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="fdH-QB-zq5">
-                                        <rect key="frame" x="36" y="10" width="199" height="16"/>
+                                        <rect key="frame" x="36" y="10" width="286" height="16"/>
                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <fontDescription key="fontDescription" name="OpenSans-Regular" family="Open Sans" pointSize="14"/>
                                         <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" returnKeyType="search" smartInsertDeleteType="no"/>
@@ -86,37 +86,6 @@
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                             </view>
-                            <button opaque="NO" contentMode="scaleToFill" semanticContentAttribute="forceRightToLeft" horizontalHuggingPriority="251" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lTt-u2-ST2">
-                                <rect key="frame" x="275" y="125" width="87" height="40"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="40" id="6ic-wc-NMH"/>
-                                    <constraint firstAttribute="width" constant="87" id="WhF-ri-hfi"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" name="OpenSans-Regular" family="Open Sans" pointSize="12"/>
-                                <color key="tintColor" name="lightBlue"/>
-                                <inset key="titleEdgeInsets" minX="0.0" minY="0.0" maxX="10" maxY="0.0"/>
-                                <inset key="imageEdgeInsets" minX="10" minY="3" maxX="2.2250738585072014e-308" maxY="0.0"/>
-                                <state key="normal" title="Sort by">
-                                    <imageReference key="image" image="chevron.down" catalog="system" symbolScale="small"/>
-                                </state>
-                                <state key="selected">
-                                    <imageReference key="image" image="chevron.up" catalog="system" symbolScale="small"/>
-                                </state>
-                                <userDefinedRuntimeAttributes>
-                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
-                                        <real key="value" value="1"/>
-                                    </userDefinedRuntimeAttribute>
-                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRad">
-                                        <real key="value" value="5"/>
-                                    </userDefinedRuntimeAttribute>
-                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
-                                        <color key="value" white="1" alpha="0.5" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                    </userDefinedRuntimeAttribute>
-                                </userDefinedRuntimeAttributes>
-                                <connections>
-                                    <action selector="sortTouched" destination="AfJ-vR-xeD" eventType="touchUpInside" id="vBI-sl-Qo2"/>
-                                </connections>
-                            </button>
                             <button opaque="NO" contentMode="scaleToFill" semanticContentAttribute="forceRightToLeft" horizontalHuggingPriority="251" selected="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QyG-zV-NIK">
                                 <rect key="frame" x="370" y="125" width="40" height="40"/>
                                 <constraints>
@@ -369,14 +338,12 @@
                             <constraint firstItem="xcb-c8-9Jc" firstAttribute="trailing" secondItem="erI-i9-xyM" secondAttribute="trailing" id="9sR-DK-nyk"/>
                             <constraint firstItem="QyG-zV-NIK" firstAttribute="centerY" secondItem="PgS-w9-Oso" secondAttribute="centerY" id="CHG-wI-hED"/>
                             <constraint firstItem="rKV-M7-8mM" firstAttribute="centerX" secondItem="cT7-q0-LeJ" secondAttribute="centerX" id="Ee2-Ir-aE5"/>
-                            <constraint firstItem="lTt-u2-ST2" firstAttribute="leading" secondItem="PgS-w9-Oso" secondAttribute="trailing" constant="12" id="H9u-TS-MGb"/>
                             <constraint firstItem="xcb-c8-9Jc" firstAttribute="bottom" secondItem="erI-i9-xyM" secondAttribute="bottom" id="I3B-oq-vzt"/>
+                            <constraint firstItem="QyG-zV-NIK" firstAttribute="leading" secondItem="PgS-w9-Oso" secondAttribute="trailing" constant="20" id="LuU-f8-sUo"/>
                             <constraint firstItem="PgS-w9-Oso" firstAttribute="leading" secondItem="xcb-c8-9Jc" secondAttribute="leading" constant="20" id="NE6-Ti-Kjh"/>
                             <constraint firstItem="PgS-w9-Oso" firstAttribute="top" secondItem="H57-ls-gup" secondAttribute="bottom" constant="24" id="O4f-6M-Sru"/>
-                            <constraint firstItem="lTt-u2-ST2" firstAttribute="centerY" secondItem="PgS-w9-Oso" secondAttribute="centerY" id="QUA-L9-ePT"/>
                             <constraint firstItem="OKg-zv-eQU" firstAttribute="top" secondItem="xcb-c8-9Jc" secondAttribute="top" id="T8F-Fe-d48"/>
                             <constraint firstItem="OKg-zv-eQU" firstAttribute="leading" secondItem="H57-ls-gup" secondAttribute="leading" id="UjN-yl-oaY"/>
-                            <constraint firstItem="QyG-zV-NIK" firstAttribute="leading" secondItem="lTt-u2-ST2" secondAttribute="trailing" constant="8" id="Y3V-0E-cFl"/>
                             <constraint firstItem="rKV-M7-8mM" firstAttribute="centerY" secondItem="cT7-q0-LeJ" secondAttribute="centerY" id="bRa-R0-u9A"/>
                             <constraint firstItem="erI-i9-xyM" firstAttribute="top" secondItem="PgS-w9-Oso" secondAttribute="bottom" constant="14" id="bkn-Xf-5Dn"/>
                             <constraint firstItem="xcb-c8-9Jc" firstAttribute="trailing" secondItem="QyG-zV-NIK" secondAttribute="trailing" constant="20" id="pC4-od-0QM"/>
@@ -385,7 +352,6 @@
                     <navigationItem key="navigationItem" id="s21-f9-KjK"/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                     <connections>
-                        <outlet property="btnSort" destination="lTt-u2-ST2" id="tkE-11-Vhp"/>
                         <outlet property="btnSortOrder" destination="QyG-zV-NIK" id="xOb-9x-hVr"/>
                         <outlet property="notFound" destination="rKV-M7-8mM" id="kYp-BV-jC7"/>
                         <outlet property="searchView" destination="PgS-w9-Oso" id="0pt-d4-YJ8"/>
@@ -404,9 +370,7 @@
         <image name="arrow_down" width="5.3333334922790527" height="3.3333332538604736"/>
         <image name="arrow_up" width="3.6666667461395264" height="3"/>
         <image name="bitcoin" width="24.333333969116211" height="24"/>
-        <image name="chevron.down" catalog="system" width="128" height="70"/>
         <image name="chevron.left" catalog="system" width="97" height="128"/>
-        <image name="chevron.up" catalog="system" width="128" height="70"/>
         <image name="magnifyingglass" catalog="system" width="128" height="117"/>
         <image name="not_found" width="138" height="111"/>
         <image name="radial" width="326" height="55"/>
@@ -418,9 +382,6 @@
         </namedColor>
         <namedColor name="darkBlue">
             <color red="0.078000001609325409" green="0.14499999582767487" blue="0.3529999852180481" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-        </namedColor>
-        <namedColor name="lightBlue">
-            <color red="0.43500000238418579" green="0.71799999475479126" blue="0.89800000190734863" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
     </resources>
 </document>

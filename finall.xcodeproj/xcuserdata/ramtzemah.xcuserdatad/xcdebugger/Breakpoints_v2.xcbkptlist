@@ -412,8 +412,8 @@
             filePath = "finall/Controllers/MarketsViewController.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "81"
-            endingLineNumber = "81"
+            startingLineNumber = "76"
+            endingLineNumber = "76"
             landmarkName = "sortOrderTouched()"
             landmarkType = "7">
          </BreakpointContent>

@@ -320,10 +320,10 @@
                                 </connections>
                             </button>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="chevron.left" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="OKg-zv-eQU">
-                                <rect key="frame" x="0.0" y="61" width="30" height="27"/>
+                                <rect key="frame" x="0.0" y="71" width="30" height="20"/>
                                 <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="30.666666666666671" id="iEa-Qm-Jee"/>
+                                    <constraint firstAttribute="height" constant="23.666666666666671" id="iEa-Qm-Jee"/>
                                     <constraint firstAttribute="width" constant="30" id="nJ0-Nx-eqV"/>
                                 </constraints>
                             </imageView>
@@ -342,7 +342,7 @@
                             <constraint firstItem="QyG-zV-NIK" firstAttribute="leading" secondItem="PgS-w9-Oso" secondAttribute="trailing" constant="20" id="LuU-f8-sUo"/>
                             <constraint firstItem="PgS-w9-Oso" firstAttribute="leading" secondItem="xcb-c8-9Jc" secondAttribute="leading" constant="20" id="NE6-Ti-Kjh"/>
                             <constraint firstItem="PgS-w9-Oso" firstAttribute="top" secondItem="H57-ls-gup" secondAttribute="bottom" constant="24" id="O4f-6M-Sru"/>
-                            <constraint firstItem="OKg-zv-eQU" firstAttribute="top" secondItem="xcb-c8-9Jc" secondAttribute="top" id="T8F-Fe-d48"/>
+                            <constraint firstItem="OKg-zv-eQU" firstAttribute="top" secondItem="xcb-c8-9Jc" secondAttribute="top" constant="10" id="T8F-Fe-d48"/>
                             <constraint firstItem="OKg-zv-eQU" firstAttribute="leading" secondItem="H57-ls-gup" secondAttribute="leading" id="UjN-yl-oaY"/>
                             <constraint firstItem="rKV-M7-8mM" firstAttribute="centerY" secondItem="cT7-q0-LeJ" secondAttribute="centerY" id="bRa-R0-u9A"/>
                             <constraint firstItem="erI-i9-xyM" firstAttribute="top" secondItem="PgS-w9-Oso" secondAttribute="bottom" constant="14" id="bkn-Xf-5Dn"/>

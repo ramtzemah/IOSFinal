@@ -24,22 +24,10 @@ class LoginViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        /////
+
         Managersx.delegate = self
         Managersx.fetchMarkets()
-        ///
-        if let navigationController = self.navigationController {
-                            // The view controller is embedded in a navigation controller
-                            // You can safely use pushViewController(_:animated:) here
-                            let storyboard = UIStoryboard(name: "Markets", bundle: nil)
-                            let ctrl = storyboard.instantiateViewController(identifier: "MarketsViewController")
-                            navigationController.pushViewController(ctrl, animated: true)
-                        } else {
-                            // The view controller is not embedded in a navigation controller
-                            // pushViewController(_:animated:) will not work here
-                            print("The view controller is not embedded in a navigation controller.")
-                        }
-        ///
+
         handleView()
     }
     
@@ -51,7 +39,7 @@ class LoginViewController: UIViewController {
     }
 
     func handleView() {
-        self.validateLogin(user: "", pass: "")
+        _ = self.validateLogin(user: "", pass: "")
         TFusername.delegate = self
         TFusername.text = "Email"
         TFpassword.delegate = self
@@ -162,7 +150,7 @@ extension LoginViewController: UITextFieldDelegate{
                    textField.text = "Password"
                }
            }
-        self.validateLogin(user: TFusername.text ?? "", pass: TFpassword.text ?? "")
+        _ = self.validateLogin(user: TFusername.text ?? "", pass: TFpassword.text ?? "")
     }
 }
 

@@ -2,7 +2,7 @@
 //  ChartManager.swift
 //  INX
 //
-//  Created by Martin Dominguez on 23/11/2021.
+//  Created by רם צמח on 23/11/2021.
 //
 
 import Foundation

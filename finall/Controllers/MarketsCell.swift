@@ -2,7 +2,7 @@
 //  MarketsCell.swift
 //  INX
 //
-//  Created by Martin Dominguez on 23/12/2021.
+//  Created by רם צמח on 23/12/2021.
 //
 
 import UIKit
@@ -24,18 +24,27 @@ class MarketsCell: UITableViewCell {
     }
     
     func setupCell(data: Market) {
+        let numberFormatter = NumberFormatter()
+        numberFormatter.numberStyle = .decimal
+
+
         let codes = data.marketName?.split(separator: "-")
         self.assetIcon.load(urlString: MarketsCell.getAssetIcon(assett: String(codes?.first ?? "")), placeholder: nil)
         self.btnAssetTrend.setImage(UIImage(named: "arrow_up"), for: .normal)
         self.btnAssetTrend.setImage(UIImage(named: "arrow_down"), for: .selected)
         
         self.lblAsset.text = data.marketName
-        self.lblAssetValue.text =  String(format: "%.0f", data.lastPrice!)+"$"
-        let randomNumber1 = Int.random(in: 0...3000000)
+        if let formattedNumber = numberFormatter.string(from: NSNumber(value: Double(data.lastPrice!))) {
+            print(formattedNumber) // Output: "12,354,689.123456789"
+            let formattedString = formattedNumber + "$"
+            self.lblAssetValue.text = formattedString
+        }
+   //     self.lblAssetValue.text =  String(format: "%.0f", data.lastPrice!)+"$"
         
         if let asset = data.marketName, let index = asset.firstIndex(of: "-") {
             let newAsset = asset.prefix(upTo: index)
-            self.lblAssetDesc.text = "\(String(newAsset)) Vol: \(MarketsCell.formatVolNumber(randomNumber1 ?? 0))"
+            self.lblAssetDesc.text = "\(String(newAsset)) Vol: \(MarketsCell.formatVolNumber(data.vol ?? 0))"
+            self.lblAssetDesc.text = "\(String(newAsset)) Vol: \(MarketsCell.formatVolNumber(data.vol ?? 0))"
         }
         self.btnAssetTrend.isHighlighted = false
         var color: UIColor!
@@ -48,10 +57,8 @@ class MarketsCell: UITableViewCell {
         //            color = UIColor(named: "greenTrend")
         //        }
         self.bottomIndicator.backgroundColor = color
-        let randomPer = Double.random(in: -10.0...10.0)
-        let roundedNumber = (randomPer * 100).rounded() / 100
-        self.btnAssetTrend.isSelected = (roundedNumber ?? 0) < 0
-        if (roundedNumber ?? 0) == 0 {
+        self.btnAssetTrend.isSelected = (data.per ?? 0) < 0
+        if (data.per ?? 0) == 0 {
             self.btnAssetTrend.setImage(UIImage(), for: .normal)
             self.btnAssetTrend.setImage(UIImage(), for: .selected)
             self.btnAssetTrend.setTitleColor(UIColor(named: "lightBlue"), for: .selected)
@@ -64,7 +71,7 @@ class MarketsCell: UITableViewCell {
         }
         
         
-        let formattedTrend = "\(roundedNumber ?? 0.0)%".replacingOccurrences(of: "-", with: "")
+        let formattedTrend = "\(data.per ?? 0.0)%".replacingOccurrences(of: "-", with: "")
         self.btnAssetTrend.setTitle(formattedTrend, for: .normal)
         //let graphData = (data.graphData != nil) ? data.graphData : Array([data.currentHour!])
         //        let chartData = ChartManager.getChartDataEntryFrom(data: graphData ?? [])

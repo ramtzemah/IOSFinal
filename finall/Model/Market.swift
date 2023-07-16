@@ -25,12 +25,19 @@ struct Market: Codable {
     var marketName: String?
     var id: String?
     var iconLink: String?
+    var vol: Int?
+    var per: Double?
 
     static func parse(json: Data) -> [Market]? {
         let decoder = JSONDecoder()
        // let data = json.data(using: String.Encoding(rawValue: String.Encoding.utf8.rawValue))!
         do {
-            let vMarkets: [Market] = try decoder.decode([Market].self, from: json)
+            var vMarkets: [Market] = try decoder.decode([Market].self, from: json)
+            for (index, item) in vMarkets.enumerated() {
+                vMarkets[index].vol = Int.random(in: 0...3000000)
+                let randomPer = Double.random(in: -10.0...10.0)
+                vMarkets[index].per = (randomPer * 100).rounded() / 100
+            }
             return vMarkets
         } catch {
             print("Unexpected error: \(error).")

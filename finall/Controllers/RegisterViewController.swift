@@ -102,7 +102,17 @@ class RegisterViewController: UIViewController {
         FirebaseCenter.signUp(email: TFusername.text!, password: TFpassword.text!) { success, data, errorMsg in
             if success {
                 print(success)
-
+                if let navigationController = self.navigationController {
+                                    // The view controller is embedded in a navigation controller
+                                    // You can safely use pushViewController(_:animated:) here
+                                    let storyboard = UIStoryboard(name: "View", bundle: nil)
+                                    let ctrl = storyboard.instantiateViewController(identifier: "LoginViewController")
+                                    navigationController.pushViewController(ctrl, animated: true)
+                                } else {
+                                    // The view controller is not embedded in a navigation controller
+                                    // pushViewController(_:animated:) will not work here
+                                    print("The view controller is not embedded in a navigation controller.")
+                                }
             } else {
                 self.errorLbl.text = "User with this email already exists"
                 self.errorContainer.isHidden = false

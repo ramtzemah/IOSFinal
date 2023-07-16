@@ -17,6 +17,15 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // Override point for customization after application launch.
         UINavigationBar.appearance().backItem?.hidesBackButton = true
         FirebaseApp.configure()
+        
+        
+        let windoww = UIWindow(frame: UIScreen.main.bounds)
+        let storyboard = UIStoryboard(name: "View", bundle: nil)
+        let initialViewController = storyboard.instantiateInitialViewController()
+        windoww.rootViewController = initialViewController
+        windoww.makeKeyAndVisible()
+        self.window = windoww
+        
         return true
     }
 
